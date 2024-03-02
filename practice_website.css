@@ -1,11 +1,96 @@
 body {
-    background-color: powderblue
+    background-color: rgb(255, 0, 0);
+    padding-bottom: 100px;
 }
 
 #header {
     background-color: pink;
-    font-size:larger;
+    font-size: larger;
     font-weight: bold;
     font-style: italic;
 
 }
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 200px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.5;
+    color: white;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+    background: white;
+    color: red;
+}
+
+i {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Style for iframe */
+.video-container iframe {
+    text-align:center;
+    width: 900px;
+    height: 506px;
+    /* Adjust height as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: red;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: red;
+  background-image: none;
+  color:red;
+
+}
+
+/* .carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */
+
+.carousel-inner{
+    margin: auto;
+  }
+
+/* .carousel-control-prev,.carousel-control-next{
+    height: 100px;
+    width: 100px;
+    outline: red;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: red;
+    background-image: none;
+    color:red;
+} */
