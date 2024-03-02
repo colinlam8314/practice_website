@@ -10,11 +10,14 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
 </head>
 
 <body>
-  <div id="header">
-    <h1>Welcome to Colin's practice website</h1>
+  <div id="header" class="text-center">
+  <h1>Welcome to Colin's practice website</h1>
   </div>
 
   <div class="container">
@@ -89,29 +92,6 @@
     </div>
   </div>
 
-
-  <!--div class="container">
-  <div class="row justify-content-start">
-    <div class="col-md-6">
-      <a href="https://www.youtube.com/" target="_blank" class="btn">
-        <img src="../youtube_logo.jpg" alt="YouTube Logo" style="height: 200px; width: auto; margin-right: 5px;">
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="https://www.facebook.com/" target="_blank" class="btn">
-        <img src="../facebook_logo.png" alt="Facebook Logo" style="height: 175px; width: auto; margin-right: 5px;">
-      </a>
-    </div>
-    <div class="col-md-6">
-      <a href="https://www.instagram.com/" target="_blank" class="btn">
-        <img src="../instagram_logo.png" alt="instagram Logo" style="height: 200px; width: auto; margin-right: 5px;">
-      </a>
-    </div>
-  </div>
-</div-->
-
-
-
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-3">
@@ -128,22 +108,52 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row justify-content-center">
-        <!-- First YouTube Video Embed -->
-        <div class="col-lg-10">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pXeU9ZB41k8"
-              allowfullscreen></iframe>
+    <!-- Carousel  -->
+    <div class="container text-center">
+      <p class="carousel-title">Jang Wonyoung</p>
+      <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- First Video -->
+          <div class="carousel-item active">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/pXeU9ZB41k8" allowfullscreen></iframe>
+            </div>
           </div>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M3HfYnpyu0g"
-              allowfullscreen></iframe>
+          <!-- Second Video -->
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/M3HfYnpyu0g" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- Third Video-->
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/hcj6YtDFMNk?si=p8naEBz3ekchsNFh" allowfullscreen></iframe>
+            </div>
+          </div>
+          
+          <!-- Fourth Video-->
+          <div class="carousel-item">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/LCMCpTcUE5g" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
+
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </div>
 
+    <!-- Hearts -->
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="fa-3x">
@@ -157,44 +167,10 @@
     </div>
   </div>
 
-
-  <div class="container text-center">
-    <div id="videoCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <!-- First Video -->
-        <div class="carousel-item active">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/pXeU9ZB41k8" allowfullscreen></iframe>
-          </div>
-        </div>
-        <!-- Second Video -->
-        <div class="carousel-item">
-          <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/M3HfYnpyu0g" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel Controls -->
-      <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-
-
-
-
-
   <!-- Bootstrap JS and dependencies (optional) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 
 </html>

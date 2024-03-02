@@ -1,14 +1,14 @@
 body {
-    background-color: rgb(255, 0, 0);
+    background-color: powderblue !important;
     padding-bottom: 100px;
 }
 
-#header {
-    background-color: pink;
-    font-size: larger;
-    font-weight: bold;
-    font-style: italic;
 
+#header{
+    background-color: pink !important;
+    font-size: larger !important;
+    font-weight: bold !important;
+    font-style: italic !important;
 }
 
 
@@ -21,10 +21,18 @@ body {
     margin-bottom: 200px;
 }
 
+.fa-brands {
+    transition: transform 0.75s ease;
+}
+
+.fa-heart{
+    color: red;
+}
+
 /* Add a hover effect if you want */
-.fa:hover {
-    opacity: 0.5;
-    color: white;
+.fa-brands:hover {
+    opacity: 0.7;
+    transform: scale(1.25);
 }
 
 /* Facebook */
@@ -46,6 +54,15 @@ i {
     margin-right: 40px;
 }
 
+/* Carousel Title */
+.carousel-title {
+    font-size: 60px;
+    color: pink;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
 /* Style for iframe */
 .video-container iframe {
     text-align:center;
@@ -54,43 +71,10 @@ i {
     /* Adjust height as needed */
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  outline: red;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  border: red;
-  background-image: none;
-  color:red;
-
+/* .carousel-indicators */
+.carousel-control-next,.carousel-control-prev  {
+    filter: invert(100%);
+    position: relative;
+    margin-left: -20px; /* Adjust this value to set distance from the left */
+    margin-right: -20px;
 }
-
-/* .carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: red;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: red;
-} */
-
-.carousel-inner{
-    margin: auto;
-  }
-
-/* .carousel-control-prev,.carousel-control-next{
-    height: 100px;
-    width: 100px;
-    outline: red;
-    background-size: 100%, 100%;
-    border-radius: 50%;
-    border: red;
-    background-image: none;
-    color:red;
-} */
