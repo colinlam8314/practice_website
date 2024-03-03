@@ -1,14 +1,14 @@
 body {
-    background-color: powderblue !important;
+    background-color: white !important;
     padding-bottom: 100px;
 }
 
 
-#header{
-    background-color: pink !important;
-    font-size: larger !important;
-    font-weight: bold !important;
-    font-style: italic !important;
+#header {
+    background-color: pink;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -25,7 +25,7 @@ body {
     transition: transform 0.75s ease;
 }
 
-.fa-heart{
+.fa-heart {
     color: red;
 }
 
@@ -37,14 +37,24 @@ body {
 
 /* Facebook */
 .fa-facebook {
-    background: #3B5998;
-    color: white;
+    background: none;
+    color: blue;
 }
 
 /* Youtube */
 .fa-youtube {
-    background: white;
+    background: none;
     color: red;
+}
+
+.fa-instagram {
+    color: white;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: none;
+    padding: 8px 18px;
 }
 
 i {
@@ -65,16 +75,18 @@ i {
 
 /* Style for iframe */
 .video-container iframe {
-    text-align:center;
+    text-align: center;
     width: 900px;
     height: 506px;
     /* Adjust height as needed */
 }
 
 /* .carousel-indicators */
-.carousel-control-next,.carousel-control-prev  {
+.carousel-control-next,
+.carousel-control-prev {
     filter: invert(100%);
     position: relative;
-    margin-left: -20px; /* Adjust this value to set distance from the left */
+    margin-left: -20px;
+    /* Adjust this value to set distance from the left */
     margin-right: -20px;
 }
