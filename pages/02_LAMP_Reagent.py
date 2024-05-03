@@ -6,9 +6,11 @@ form = {
     'reactions': None,
     'beads': None,
     'conditions': None,
+    'concentrations': None,
     'repeats': None,
     'excess': None,
     'rxn_mm': None,
+    'total_rxn_mm': None,
     'template': None,
     'buffer': None,
     'evagreen': None,
@@ -20,13 +22,14 @@ left, right = st.columns(2)
 
 # Parameter inputs
 with left:
-    input_number = st.number_input(label= 'Total number of reactions =', min_value = 0, step = 1)
-    form['reactions'] = input_number
-    form['beads'] = input_number / 2
 
     # Conditions and repeats
     form['conditions'] = st.number_input(label= 'How many conditions? ', min_value = 1, value = 1, step = 1)
-    form['repeats'] = st.number_input(label = 'How many repeats? ', min_value = 1, value = 4, step = 2)
+    form['concentrations'] = st.number_input(label= 'How many concentrations? ', min_value = 1, value = 1, step = 1)
+    form['repeats'] = st.number_input(label = 'How many repeats? ', min_value = 1, value = 4, step = 1)
+    
+    form['reactions'] = form['conditions'] * form['concentrations'] * form['repeats']
+    form['beads'] = form['reactions'] / 2
 
     # Setting parameters for calculations
     form['excess'] = st.slider('How much in excess (in %):', min_value = 0, max_value = 100, value = 20, step = 1)
@@ -43,14 +46,11 @@ with left:
 form_disp = {
     'Total number of reactions': form['reactions'],
     'Total number of beads': form['beads'],
-    'Reaction master mix per condition': form['rxn_mm'],
-    'Template to add per condition': form['template']
+    'Reaction master mix per concentration': form['rxn_mm'],
+    'Template to add per concentration': form['template']
 }
 
 
 # Display results
 with right:
-    if (form['conditions'] * form['repeats']) != form['reactions']:
-        st.write('Number of conditions and repeats are not matching with total number of reactions.')
-    else:
-        st.write(form_disp)
+    st.write(form_disp)
