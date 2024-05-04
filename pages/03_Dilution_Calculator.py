@@ -19,8 +19,15 @@ RNA_virus_options = ['Covid', 'FluA', 'FluB', 'MS2']
 # Covid viruses
 covid_strain_option = ['gamma-irradiated covid, WA-20']
 
+# Stock Virus concentration
+stock_virus = {
+    'gamma-irradiated covid, WA-20': int(1.05e6)
+}
+
 # Virus selection
 with left:
+
+    final_selection = None
 
     main_selection = st.selectbox(
         'Select the type of virus/bacteria: ',
@@ -45,3 +52,8 @@ with left:
                 index = None,
                 placeholder = 'Click to select'
             )
+
+            final_selection = covid_strain_selection
+
+# Dilution calculation function
+st.write(final_selection)
