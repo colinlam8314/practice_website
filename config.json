@@ -1,0 +1,13 @@
+{
+    "dna virus": {
+        
+    },
+    "rna virus": {
+        "covid":{
+            "gamma-irradiated covid, WA20":1.05e8
+        }
+    },
+    "dna bacteria": {
+
+    }
+}
