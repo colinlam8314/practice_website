@@ -1,13 +1,41 @@
 {
-    "dna virus": {
-        
-    },
-    "rna virus": {
-        "covid":{
-            "gamma-irradiated covid, WA20":1.05e8
+    "RNA Virus": [
+        {
+            "type": "Covid",
+            "strain": "WA-1",
+            "lot": "1234",
+            "concentration": "1.05e6",
+            "date received": "5/22/2024"
+        },
+        {
+            "type": "Flu",
+            "strain": "H3N2",
+            "lot": "5678",
+            "concentration": "1000",
+            "date received": "5/22/2024"
+        },
+        {
+            "type": "Covid",
+            "strain": "Omicron",
+            "lot": null,
+            "concentration": "5.83e6",
+            "date received": null
         }
-    },
-    "dna bacteria": {
-
-    }
+    ],
+    "DNA Bacteria": [
+        {
+            "type": "eeeee",
+            "strain": "S",
+            "lot": "123",
+            "concentration": "sdfsdfsdf",
+            "date received": "gdfsdfs"
+        },
+        {
+            "type": "NG",
+            "strain": "1234",
+            "lot": "135",
+            "concentration": "1000",
+            "date received": "5/22/2024"
+        }
+    ]
 }

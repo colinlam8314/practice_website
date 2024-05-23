@@ -1,26 +1,36 @@
 import streamlit as st
 import pandas as pd
 from datetime import datetime
+import json
 
+# Function to load data from JSON file
+def load_data():
+    with open('config.json', 'r') as f:
+        return json.load(f)
 
-# for sample_type_df in sample_types:
-#     edited_df = st.data_editor(sample_type_df)
-df = {
-    "rna target": [
-        {
-            "index": "covid",
-            "strain": "ab",
-            "lot": "!234342",
-            "date received": datetime.today() 
-        }
-    ]
-}
+# Function to save data to JSON file
+def save_data(data):
+    with open('config.json', 'w') as f:
+        json.dump(data, f, indent=4)
 
-loaded_df = pd.DataFrame(df['rna target'])
+data = load_data()
 
-# sample_types = []
-# for sample_type in loaded_df.columns:
-#     sample_types.append(loaded_df[sample_type])
+# Create a data editor for each table
+st.title("Streamlit Data Editor")
 
-# st.write(sample_types)
-st.data_editor(loaded_df,hide_index=True)
+for table_name in data.keys():
+    st.subheader(f"{table_name}")
+    
+    # Display data editor and allow editing
+    edited_data = st.data_editor(
+        data[table_name], 
+        num_rows="dynamic", 
+        use_container_width=True,
+        key= table_name,
+    )
+    # # Save updated data if there are changes
+    if st.button(f"Save {table_name}"):
+        data[table_name] = edited_data
+        save_data(data)
+        st.success(f"{table_name} data saved successfully!")
+
