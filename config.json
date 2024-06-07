@@ -1,41 +1,34 @@
 {
     "RNA Virus": [
         {
-            "type": "Covid",
-            "strain": "WA-1",
-            "lot": "1234",
-            "concentration": "1.05e6",
-            "date received": "5/22/2024"
+            "Type": "Covid",
+            "Strain": "WA-1",
+            "Lot:": "1234",
+            "Concentration (cp/uL)": "1.05e6",
+            "Date Received": "5/24/2024"
         },
         {
-            "type": "Flu",
-            "strain": "H3N2",
-            "lot": "5678",
-            "concentration": "1000",
-            "date received": "5/22/2024"
+            "Type": "Covid",
+            "Strain": "Omicron",
+            "Lot:": "70050694",
+            "Concentration (cp/uL)": "5.83e6",
+            "Date Received": "5/24/2024"
         },
         {
-            "type": "Covid",
-            "strain": "Omicron",
-            "lot": null,
-            "concentration": "5.83e6",
-            "date received": null
+            "Type": "FluA",
+            "Strain": "HK19",
+            "Lot:": "327712",
+            "Concentration (cp/uL)": "1690000",
+            "Date Received": "6/6/2024"
         }
     ],
     "DNA Bacteria": [
         {
-            "type": "eeeee",
-            "strain": "S",
-            "lot": "123",
-            "concentration": "sdfsdfsdf",
-            "date received": "gdfsdfs"
-        },
-        {
-            "type": "NG",
-            "strain": "1234",
-            "lot": "135",
-            "concentration": "1000",
-            "date received": "5/22/2024"
+            "Type": "NG",
+            "Strain": "gDNA",
+            "Lot:": "1123",
+            "Concentration (cp/uL)": "3.7e5",
+            "Date Received": "5/24/2024"
         }
     ]
 }
