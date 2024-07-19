@@ -24,11 +24,46 @@
     ],
     "DNA Bacteria": [
         {
-            "Type": "NG",
-            "Strain": "gDNA",
-            "Lot:": "1123",
+            "Type": "NG gDNA",
+            "Strain": "FA1090",
+            "Lot:": "70054212",
             "Concentration (cp/uL)": "3.7e5",
-            "Date Received": "5/24/2024"
+            "Date Received": "10/11/2023"
+        },
+        {
+            "Type": "CT gDNA",
+            "Strain": "D/UW-3/Cx",
+            "Lot:": "70061855",
+            "Concentration (cp/uL)": "550000",
+            "Date Received": "10/11/2023"
+        },
+        {
+            "Type": "NG cell",
+            "Strain": "NCTC 8375 [B 5025]",
+            "Lot:": "70055135",
+            "Concentration (cp/uL)": "100000000",
+            "Date Received": "8/21/2023"
+        },
+        {
+            "Type": "CT cell",
+            "Strain": "D/UW-3/Cx",
+            "Lot:": "70053005",
+            "Concentration (cp/uL)": "500000",
+            "Date Received": "10/11/2023"
+        },
+        {
+            "Type": "TV cell",
+            "Strain": "C-1:NIH",
+            "Lot:": "70051176",
+            "Concentration (cp/uL)": "500000",
+            "Date Received": "10/23/2023"
+        },
+        {
+            "Type": "TV gDNA",
+            "Strain": "C-1:NIH",
+            "Lot:": "70051176",
+            "Concentration (cp/uL)": "550000",
+            "Date Received": null
         }
     ]
 }
